@@ -364,7 +364,12 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# Entity Framework Learning specific
+# Database files (old SQLite files)
 EntityFrameworkLearning.db
 EntityFrameworkLearning.db-shm
-EntityFrameworkLearning.db-wal 
+EntityFrameworkLearning.db-wal
+
+# PostgreSQL specific
+*.sql
+*.dump
+*.backup 

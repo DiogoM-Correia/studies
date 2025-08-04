@@ -43,9 +43,9 @@ public static class ServiceCollectionExtensions
             options.SerializerOptions.WriteIndented = true;
         });
 
-        // Add Entity Framework
+        // Add Entity Framework with PostgreSQL
         services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
         return services;
     }
