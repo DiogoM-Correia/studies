@@ -13,6 +13,29 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
+    networks:
+      - ef-network
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ef-learning-api
+    ports:
+      - "5000:8080"
+      - "5001:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=EntityFrameworkLearning;Username=postgres;Password=postgres
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    networks:
+      - ef-network
 
 volumes:
-  postgres_data: 
+  postgres_data:
+
+networks:
+  ef-network:
+    driver: bridge 
