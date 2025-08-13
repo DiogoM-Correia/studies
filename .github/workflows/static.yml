@@ -37,13 +37,14 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: landingpage/package-lock.json
       
       - name: Install dependencies
-        run: cd landingpage && npm ci
+        working-directory: ./landingpage
+        run: npm ci
       
       - name: Build project
-        run: cd landingpage && npm run build
+        working-directory: ./landingpage
+        run: npm run build
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
