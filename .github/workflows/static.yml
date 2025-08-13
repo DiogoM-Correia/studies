@@ -36,11 +36,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
       
       - name: Install dependencies
         working-directory: ./landingpage
-        run: npm ci
+        run: npm install
       
       - name: Build project
         working-directory: ./landingpage

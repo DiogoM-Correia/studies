@@ -92,5 +92,5 @@ jspm_packages/
 tmp/
 temp/
 
-# Lock 
-package-lock.json
+# Lock files should be committed for reproducible builds
+# package-lock.json
