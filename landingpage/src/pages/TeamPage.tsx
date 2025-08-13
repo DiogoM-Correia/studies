@@ -14,28 +14,28 @@ const TeamPage: React.FC = () => {
     {
       id: 1,
       name: "Sarah Johnson",
-      photo: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80",
       linkedin: "linkedin.com/in/sarahjohnson",
       description: "CEO & Founder with 15+ years of experience in strategic leadership and business development."
     },
     {
       id: 2,
       name: "Michael Chen",
-      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80",
       linkedin: "linkedin.com/in/michaelchen",
       description: "CTO specializing in emerging technologies and digital transformation strategies."
     },
     {
       id: 3,
       name: "Emily Rodriguez",
-      photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80",
       linkedin: "linkedin.com/in/emilyrodriguez",
       description: "Head of Design creating user-centered experiences that drive engagement and conversion."
     },
     {
       id: 4,
       name: "David Kim",
-      photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80",
       linkedin: "linkedin.com/in/davidkim",
       description: "VP of Operations ensuring seamless delivery and exceptional customer satisfaction."
     }
